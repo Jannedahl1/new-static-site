@@ -1,0 +1,117 @@
+/* Reset some defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header and navigation */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Home section */
+#home {
+    text-align: center;
+    padding: 50px;
+    background-color: #333;
+    color: white;
+}
+
+#home h1 {
+    font-size: 2.5em;
+}
+
+/* About section */
+#about {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+/* Contact section */
+#contact {
+    padding: 50px;
+    background-color: #eee;
+    text-align: center;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+#contact button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ---- Media Query for Mobile Responsiveness ---- */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #home h1 {
+        font-size: 2em;
+    }
+
+    #about h2,
+    #contact h2 {
+        font-size: 1.5em;
+    }
+
+    #contact form input,
+    #contact form textarea {
+        width: 90%;
+    }
+}
